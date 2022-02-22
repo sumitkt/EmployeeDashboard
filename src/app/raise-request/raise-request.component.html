@@ -1,0 +1,31 @@
+
+<mat-card class="raise-request">
+
+    <mat-card-header>
+      <mat-card-title>Raise a Request</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field class="full-width">
+        <ngx-multiple-dates [matDatepicker]="pickerWithToggleButton" placeholder="Select Dates"
+                            name="modelWithToggleButton" [(ngModel)]="modelWithToggleButton">
+        </ngx-multiple-dates>
+        <mat-datepicker-toggle matPrefix [for]="pickerWithToggleButton"></mat-datepicker-toggle>
+        <mat-datepicker #pickerWithToggleButton></mat-datepicker>
+      </mat-form-field>
+    
+      <form >
+        <div class="form-group">
+        <label for="fname">Subject:</label>
+        <input type="text"  class="form-control" id="subject" name="subject" [(ngModel)]="subject" placeholder="eg. Sick Leave/Shift Change"><br>
+        <!-- <label for="lname">Reason:</label> -->
+        <textarea type="text" class="form-control" id="reason" name="reason" [(ngModel)]="reason" placeholder="Type Your Reason"></textarea><br>
+     </div>
+        <button type="button" class="btn btn-success" (click)="onSubmit()" >Submit</button>
+        <button type="button" class="btn btn-secondary" style="margin-left: 5px; " (click)="onCancel()" >Cancel</button>
+
+      </form>
+      
+    </mat-card-content>
+  </mat-card> 
+ 
+  

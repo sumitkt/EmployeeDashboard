@@ -1,0 +1,64 @@
+/* :host {
+  display: block;
+
+  mat-toolbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  mat-card {
+    margin-bottom: 15px;
+
+    pre {
+      max-height: 161px;
+      overflow-y: auto;
+    }
+  } */
+/* 
+  .container {
+    margin-top: 64px;
+    padding: 15px;
+  } */
+
+  .full-width {
+    width: 100%;
+  }
+.raise-request{
+  width: 93.2%;
+  margin-left:25px;
+  margin-top: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  /* box-shadow: 10px 10px 5px 12px lightblue;; */
+}
+  /* .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 90%;
+  } */
+
+
+  /* Chip classes. */
+  /* .mat-chip {
+    &.my-red {
+      background-color: #f44336 !important;
+      color: #fff !important;
+    }
+
+    &.my-green {
+      background-color: #4caf50 !important;
+      color: #fff !important;
+    }
+
+    &.my-blue {
+      background-color: #2196f3 !important;
+      color: #fff !important;
+    }
+  }
+  
+} */
