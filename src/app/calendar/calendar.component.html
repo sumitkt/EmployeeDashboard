@@ -1,0 +1,27 @@
+<div class="calendar">
+    <div class="header">
+        <div class="month">{{month}}</div>
+        <div class="arrows">
+            <button (click)="month=today" class="today">Today</button>
+            <button (click)="prevMonth()"><i class="bi bi-chevron-left"></i></button>
+            <button (click)="nextMonth()"><i class="bi bi-chevron-right"></i></button>
+        </div>
+    </div>
+    <div class="schedules">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th *ngFor="let day of weekDays">{{day}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let week of getDates()">
+                    <td *ngFor="let day of week">
+                        <div class="date">{{day[0]}}</div>
+                        <div class="{{day[1]}}-shift shift">{{day[1]}}</div>
+                    </td>
+                </tr>            
+            </tbody>
+        </table>
+    </div>    
+</div>
